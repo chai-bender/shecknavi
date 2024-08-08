@@ -7,7 +7,7 @@ const bid = new Schema(
             default: () => new Types.ObjectId(),
         },
         bidAmount: {
-            type: Integer,
+            type: Number,
             required: true,
             maxlength: 7
         },
