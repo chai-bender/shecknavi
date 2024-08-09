@@ -6,6 +6,9 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import App from './App';
 import Home from './pages/Home';
 import Exhibits from './pages/Exhibits';
+import Ethereal from './pages/Ethereal';
+import Nature from './pages/Nature';
+import Urban from './pages/Urban';
 
 // Define the accessible routes, and which components respond to which URL
 const router = createBrowserRouter([
@@ -20,7 +23,19 @@ const router = createBrowserRouter([
       {
         path: '/Exhibits',
         element: <Exhibits />
-      }
+      },
+      {
+        path: '/Ethereal',
+        element: <Ethereal />
+      },
+      {
+        path: '/Nature',
+        element: <Nature />
+      },
+      {
+        path: '/Urban',
+        element: <Urban />
+      },
 
     ],
   },
