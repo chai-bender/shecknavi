@@ -10,7 +10,7 @@ const { placeBid,
 const router = express.Router();
 
 // Route to place a bid
-router.post('/', placeBid);
+router.post('/', authMiddleware, placeBid);
 
 // Route to get all bids for an artwork
 router.get('/:artworkId', getBidsForArtwork);
