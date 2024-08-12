@@ -5,7 +5,7 @@ const { authMiddleware } = require('../../utils/auth');
 const { placeBid, 
     getBidsForArtwork, 
     getHighestBidForArtwork 
-} = require('../controllers/bidController');
+} = require('../../controllers/bidController');
 
 const router = express.Router();
 
