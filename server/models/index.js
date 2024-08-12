@@ -1,5 +1,5 @@
 const User = require('./User');
-const Auction = require('./Artwork');
+const Artwork = require('./Artwork');
 const Bid = require('./Bid')
 
-module.exports = { User, Auction, Bid };
+module.exports = { User, Artwork, Bid };

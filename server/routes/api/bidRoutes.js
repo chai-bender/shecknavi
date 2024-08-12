@@ -5,12 +5,12 @@ const { authMiddleware } = require('../../utils/auth');
 const { placeBid, 
     getBidsForArtwork, 
     getHighestBidForArtwork 
-} = require('../controllers/bidController');
+} = require('../../controllers/bidController');
 
 const router = express.Router();
 
 // Route to place a bid
-router.post('/', authMiddleware, placeBid);
+router.post('/', placeBid);
 
 // Route to get all bids for an artwork
 router.get('/:artworkId', getBidsForArtwork);
