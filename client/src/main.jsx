@@ -9,6 +9,7 @@ import Exhibits from './pages/Exhibits';
 import Ethereal from './pages/Ethereal';
 import Nature from './pages/Nature';
 import Urban from './pages/Urban';
+import Login from './pages/Login';
 
 // Define the accessible routes, and which components respond to which URL
 const router = createBrowserRouter([
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
       {
         path: '/Urban',
         element: <Urban />
+      },
+      {
+        path: '/Login',
+        element: <Login />
       },
 
     ],
