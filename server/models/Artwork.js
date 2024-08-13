@@ -27,21 +27,10 @@ const artworkSchema = new mongoose.Schema({
   },
   bids: [
     {
-      userId: {
         type: mongoose.Schema.Types.ObjectId,
-        ref: 'User',
-        required: true,
-      },
-      bidAmount: {
-        type: Number,
-        required: true,
-      },
-      bidTime: {
-        type: Date,
-        required: true,
-      },
-    },
-  ],
+        ref: 'Bid'
+    }
+],
 });
  
 const Artwork = mongoose.model('Artwork', artworkSchema);
