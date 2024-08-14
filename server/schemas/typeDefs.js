@@ -19,9 +19,9 @@ type Artwork {
 
 type Bid {
   _id: ID
+  profileId: String
+  artworkId: String
   bidAmount: Float
-  bidder: Profile
-  artwork: Artwork
   bidTime: String
 }
 
