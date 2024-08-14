@@ -1,0 +1,86 @@
+[
+    {
+      "title": "Chronicles of Time and Creation",
+      "imageUrl": "/images/etherealdream/candc.jpeg",
+      "description": "A mesmerizing fusion of clockwork precision and vibrant imagination, Chronicles of Time and Creation captures the interplay between time and artistic freedom. Golden gears and flowing colors symbolize the endless possibilities of creativity, making this piece a profound addition to any high-end collection.",
+      "startingBid": 10000,
+      "currentHighestBid": 10000,
+      "isAuctionClosed": false,
+      "bids": []
+    },
+    {
+      "title": "Ethereal Reverie",
+      "imageUrl": "/images/etherealdream/phantomlight.jpeg",
+      "description": "This mesmerizing piece captures the transcendence of the human spirit merging with the cosmos. Swirls of luminous energy envelop a graceful profile, symbolizing the dance between consciousness and the universe. The fluidity of light and form creates a harmonious blend of mysticism and beauty, making Ethereal Reverie a radiant centerpiece for any discerning collector's collection.",
+      "startingBid": 15000,
+      "currentHighestBid": 15000,
+      "isAuctionClosed": false,
+      "bids": []
+    },
+    {
+        "title": "Cybernetic Twilight",
+        "imageUrl": "/images/etherealdream/cybernetictwlight.jpeg",
+        "description": "Step into a futuristic metropolis where neon lights and soaring architecture blend into a vibrant tapestry of tomorrow. Cybernetic Twilight offers a vision of a world where technology and humanity intersect, creating an electrifying urban landscape. The reflection on the tranquil water contrasts with the bustling energy above, embodying the balance between chaos and order in a digital age. A striking piece for forward-thinking collectors.",
+        "startingBid": 50000,
+        "currentHighestBid": 50000,
+        "isAuctionClosed": false,
+        "bids": []
+      },
+      {
+        "title": "Embers of Tradition",
+        "imageUrl": "/images/naturesgambit/fire.jpeg",
+        "description": "Embers of Tradition captures the primal beauty of fire as it dances in a serene, misty setting. Surrounded by rustic pottery and natural elements, the flames evoke a sense of ancient rituals and the timeless connection between humanity and nature. The warm glow contrasts with the cool, misty backdrop, creating a moment of introspection and reverence for the enduring power of tradition.",
+        "startingBid": 35000,
+        "currentHighestBid": 35000,
+        "isAuctionClosed": false,
+        "bids": []
+      },
+      {
+        "title": "Whispers of Tranquility",
+        "imageUrl": "/images/naturesgambit/calmstone.jpeg",
+        "description": "Whispers of Tranquility presents a serene lakeside scene where large, round stones are artfully arranged in the shallow waters, creating a harmonious balance between nature and art. In the distance, a majestic snow-capped mountain rises, its reflection softly mirrored on the water's surface. The composition invites the viewer into a peaceful, meditative moment, where the calm of the lake and the grandeur of the mountain converge in a timeless, natural harmony.",
+        "startingBid": 40000,
+        "currentHighestBid": 35000,
+        "isAuctionClosed": false,
+        "bids": []
+      },
+      {
+        "title": "Whispers of Winter",
+        "imageUrl": "/images/naturesgambit/snowbound.jpeg",
+        "description": "A mesmerizing aerial photograph capturing the ethereal beauty of a winter wonderland. Snow-covered mountains rise majestically against a backdrop of a clear blue sky, while a tranquil lake reflects the golden rays of the rising sun. A winding road leads through a pristine forest towards a charming village nestled in the valley below. This captivating artwork evokes a sense of peace and tranquility, inviting the viewer to embrace the serenity of winter.",
+        "startingBid": 35000,
+        "currentHighestBid": 35000,
+        "isAuctionClosed": false,
+        "bids": []
+      },
+      {
+        "title": "Metropolis Mirage",
+        "imageUrl": "/images/urbanreflection/evening.jpeg",
+        "description": "A captivating aerial perspective of a city awash in an ethereal glow. Countless points of light converge to form a mesmerizing tapestry, creating a sense of both grandeur and intimacy. This artwork is an invitation to lose oneself in the rhythm and energy of urban life.",
+        "startingBid": 6000,
+        "currentHighestBid": 6000,
+        "isAuctionClosed": false,
+        "bids": []
+      },
+      {
+        "title": "Beyond the Veil",
+        "imageUrl": "/images/urbanreflection/upsidedown.jpeg",
+        "description": "A captivating aerial perspective of a city awash in an ethereal glow. Countless points of light converge to form a mesmerizing tapestry, creating a sense of both grandeur and intimacy. This artwork is an invitation to lose oneself in the rhythm and energy of urban life.",
+        "startingBid": 6000,
+        "currentHighestBid": 6000,
+        "isAuctionClosed": false,
+        "bids": []
+      },
+      {
+        "title": "City Symphony",
+        "imageUrl": "/images/urbanreflection/wallsofe.jpeg",
+        "description": "A vibrant tapestry of urban life, this artwork captures the energy and rhythm of a bustling metropolis. The interplay of light and shadow, combined with the reflections in the water, creates a visually stunning and immersive experience.",
+        "startingBid": 7000,
+        "currentHighestBid": 7000,
+        "isAuctionClosed": false,
+        "bids": []
+      }
+
+      
+  ]
+  
