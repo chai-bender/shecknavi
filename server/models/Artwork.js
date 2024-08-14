@@ -17,7 +17,7 @@ const artworkSchema = new mongoose.Schema({
     type: Number,
     required: true,
   },
-  currentBid: {
+  currentHighestBid: {
     type: Number,
     default: 0,
   },

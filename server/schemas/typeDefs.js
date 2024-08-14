@@ -1,11 +1,30 @@
 const typeDefs = `
-  type Profile {
-    _id: ID
-    name: String
-    email: String
-    # There is now a field to store the user's password
-    password: String
-  }
+ type Profile {
+  _id: ID
+  name: String
+  email: String
+  bids: [Bid]
+}
+
+type Artwork {
+  _id: ID
+  title: String
+  imageUrl: String
+  description: String
+  startingBid: Float
+  currentHighestBid: Float
+  isAuctionClosed: Boolean
+  bids: [Bid]
+}
+
+type Bid {
+  _id: ID
+  bidAmount: Float
+  bidder: Profile
+  artwork: Artwork
+  bidTime: String
+}
+
 
   # Set up an Auth type to handle returning data from a profile creating or user login
   type Auth {
@@ -16,6 +35,8 @@ const typeDefs = `
   type Query {
     profiles: [Profile]!
     profile(profileId: ID!): Profile
+    artworks: [Artwork]!
+    artwork(artworkId: ID!): Artwork
   }
 
   type Mutation {
@@ -24,6 +45,9 @@ const typeDefs = `
     login(email: String!, password: String!): Auth
 
     removeProfile(profileId: ID!): Profile
+
+    placeBid(artworkId: ID!, bidAmount: Float!): Bid
+  closeAuction(artworkId: ID!): Artwork
   }
 `;
 
