@@ -1,7 +1,7 @@
 const db = require('../config/connection');
 const Artwork = require('../models/Artwork'); // Import Artwork model
-const cleanDB = require('./utils/cleanDB'); // Import cleanDB utility
-const artworkData = require('.artwork.json'); // Import artwork data from JSON file
+const cleanDB = require('./cleanDB'); // Import cleanDB utility
+const artworkData = require('./artwork.json'); // Import artwork data from JSON file
 
 db.once('open', async () => {
   await cleanDB('Artwork', 'artworks'); // Clear the artworks collection
