@@ -13,7 +13,8 @@ type Artwork {
   description: String
   startingBid: Float
   currentHighestBid: Float
-  isAuctionClosed: Boolean
+  startTime: String
+  endTime: String
   bids: [Bid]
 }
 
