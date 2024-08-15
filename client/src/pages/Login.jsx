@@ -1,6 +1,8 @@
 import React, {useState} from 'react';
 import NavTabs from '../components/NavTabs';
 import { Link } from 'react-router-dom';
+import "../css/login.css";
+
 
 function Login() {
   const [username, setUsername] = useState('');
@@ -16,23 +18,26 @@ function Login() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    // TODO: Implement authentication API call here
+    
   }
 
   return (
-      <form onSubmit={handleSubmit}>
+    <div class="loginContainer">
+      <form className="loginForm" onSubmit={handleSubmit}>
         <NavTabs />
         <Link to='/Login'/>
       <div>
         <label>Username:</label>
         <input type="text" value={username} onChange={handleUsernameChange} />
       </div>
+      <br></br>
       <div>
         <label>Password:</label>
         <input type="password" value={password} onChange={handlePasswordChange} />
-      </div>
-      <button type="submit">Login</button>
+      </div><br></br>
+      <button id="loginBtn" type="submit">Login</button>
     </form>
+    </div>
   )
 }
 
