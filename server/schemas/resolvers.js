@@ -32,7 +32,7 @@ const resolvers = {
       if (!artwork) throw new Error('Artwork not found');
     
       // Ensure auction status is open and bid amount is valid
-      if (artwork.isAuctionClosed) throw new Error('Auction is closed');
+      if (Date.now() >= artwork.endTime) throw new Error('This auction is closed')
       if (bidAmount <= artwork.currentHighestBid) throw new Error('Bid must be higher than current highest bid');
     
       // Create and save the new bid

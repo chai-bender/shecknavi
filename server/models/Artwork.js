@@ -21,9 +21,13 @@ const artworkSchema = new mongoose.Schema({
     type: Number,
     default: 0,
   },
-  isAuctionClosed: {
-    type: Boolean,
-    default: false,
+  startTime: {
+    type: String,
+    required: true,
+  },
+  endTime: {
+    type: String,
+    required: true,
   },
   bids: [
     {
