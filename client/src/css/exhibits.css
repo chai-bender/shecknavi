@@ -1,0 +1,165 @@
+.nav-tabs {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  background-color: #000000;
+  border-bottom: 2px solid #dee2e6;
+  justify-content: left;
+}
+
+.nav-item {
+  margin: 0;
+}
+
+.nav-link {
+  display: block;
+  padding: 1rem 2rem;
+  color: #ffffff;
+  text-decoration: none;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-link.active {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.nav-link:hover {
+  color: #0056b3;
+  background-color: #e9ecef;
+}
+
+
+.exhibitImg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+.image-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.exhibitTitle {
+  font-size: 4rem;
+  text-align: center;
+  margin: 20px 0;
+  border: 5px solid #000000;
+  border-radius: 25px;
+  padding: 10px 20px;
+  
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 50px;
+}
+
+.flex-container > div {
+    padding: 15px 30px;
+    font-family: "Grey Qo", cursive;
+    font-size: 4.25rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 40px;
+    background-color: #007bff;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+  }
+  
+  .flex-container > div a {
+    text-decoration: none; 
+    color: white; 
+  }
+  
+  .flex-container > div a:hover {
+    color: white; 
+  }
+  
+  .flex-container > div:hover {
+    background-color: #0c4888;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+.snippet {
+  color: #007bff;
+  text-align: center;
+  font-size: 40px;
+  font-family: "Grey Qo", cursive;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive Styling */
+@media (max-width: 1200px) {
+  .exhibitTitle {
+    font-size: 2.5rem;
+  }
+
+  .flex-container > div {
+    width: 220px; 
+  }
+}
+
+@media (max-width: 900px) {
+  .exhibitTitle {
+    font-size: 2rem;
+  }
+
+  .flex-container > div {
+    width: 200px; 
+  }
+}
+
+@media (max-width: 600px) {
+  .nav-tabs {
+    flex-direction: column; 
+  }
+
+  .nav-link {
+    padding: 0.75rem 1.5rem; 
+  }
+
+  .exhibitTitle {
+    font-size: 1.5rem; 
+  }
+
+  .flex-container {
+    flex-direction: column; 
+    align-items: center; 
+  }
+
+  .flex-container > div {
+    width: auto; 
+  }
+}
