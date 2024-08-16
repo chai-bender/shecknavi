@@ -8,10 +8,24 @@ export const QUERY_PROFILE = gql`
       email
     
       }
-    }
   }
 `;
 
-
+export const QUERY_ARTWORK = gql`
+query Artworks {
+  artworks {
+    _id
+    currentHighestBid
+    bids {
+      bidAmount
+    }
+    description
+    startTime
+    endTime
+    imageUrl
+    startingBid
+    title
+  }
+}`
 
 
