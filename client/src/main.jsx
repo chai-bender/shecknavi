@@ -10,7 +10,7 @@ import Ethereal from './pages/Ethereal';
 import Nature from './pages/Nature';
 import Urban from './pages/Urban';
 import Login from './pages/Login';
-
+import Signup from './pages/Signup';
 // Define the accessible routes, and which components respond to which URL
 const router = createBrowserRouter([
   {
@@ -40,6 +40,10 @@ const router = createBrowserRouter([
       {
         path: '/Login',
         element: <Login />
+      },
+      {
+        path: '/Signup',
+        element: <Signup />
       },
 
     ],

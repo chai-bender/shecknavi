@@ -1,0 +1,1 @@
+// pulls in artwork from each gallery
