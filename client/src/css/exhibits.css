@@ -39,7 +39,6 @@
   height: auto;
   display: block;
   margin: 0 auto;
-  border-radius: 8px;
 }
 
 .image-container {
@@ -51,7 +50,7 @@
   font-size: 4rem;
   text-align: center;
   margin: 20px 0;
-  border: 5px solid #000000;
+  border: 5px solid #007bff;
   border-radius: 25px;
   padding: 10px 20px;
   
@@ -94,7 +93,7 @@
   }
   
 .snippet {
-  color: #007bff;
+  color: #000000;
   text-align: center;
   font-size: 40px;
   font-family: "Grey Qo", cursive;
