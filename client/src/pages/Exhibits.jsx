@@ -6,13 +6,15 @@ export default function Exhibits() {
   return (
     <div>
       <NavTabs />
-      <h1 className="snippet">"Art For Your Soul"</h1>
+      <h1 className="exhibitTitle">Exhibits</h1>
+      
+      <h2 className="snippet">"Art For Your Soul"</h2>
       <img
         className="exhibitImg"
         src="./images/backdrop/exhibit.jpeg"
         alt="quiet art gallery"
       />
-      <h2 className="exhibitTitle">Exhibits</h2>
+      
 
       <div className="flex-container">
         <div>
