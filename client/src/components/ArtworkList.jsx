@@ -17,12 +17,11 @@ const ArtworkList = ({ artwork }) => {
             <div className="card-body bg-light p-2">
               <p>{art.description}</p>
             </div>
-          <button>Bid Here</button>
             <Link
-              className="btn btn-primary btn-block btn-squared"
-              to={`/art/${art._id}`}>
-              Join the discussion on this art.
-            </Link>
+                className="btn btn-primary btn-block btn-squared"
+                to={`/art/${art._id}`}>
+                Bid Here
+              </Link>
           </div>
         ))}
     </div>

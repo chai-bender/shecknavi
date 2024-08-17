@@ -11,6 +11,7 @@ import Nature from './pages/Nature';
 import Urban from './pages/Urban';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
+import ArtworkDetail from './pages/ArtworkDetail';
 // Define the accessible routes, and which components respond to which URL
 const router = createBrowserRouter([
   {
@@ -44,6 +45,10 @@ const router = createBrowserRouter([
       {
         path: '/Signup',
         element: <Signup />
+      },
+      {
+        path: '/art/:artworkId',
+        element: <ArtworkDetail />,
       },
 
     ],
