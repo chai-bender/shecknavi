@@ -6,3 +6,11 @@
   border-radius: 25px;
   padding: 10px 20px;
 }
+.construction {
+  max-width: 100%; 
+  height: auto;
+  display: block;
+  margin: 0 auto; 
+  border: 10px solid #000000;
+  border-radius: 4px; 
+}
