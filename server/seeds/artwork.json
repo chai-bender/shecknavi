@@ -6,7 +6,6 @@
       "startingBid": 10000,
       "currentHighestBid": 10000,
       "startTime": "1723677789505999",
-      "endTime": "1723677789505999",
       "bids": []
     },
     {
@@ -16,7 +15,6 @@
       "startingBid": 15000,
       "currentHighestBid": 15000,
       "startTime": "1723677789505999",
-      "endTime": "1723681389503999",
       "bids": []
     },
     {
@@ -26,7 +24,6 @@
         "startingBid": 50000,
         "currentHighestBid": 50000,
         "startTime": "1723677789505999",
-        "endTime": "1723681389503999",
         "bids": []
       },
       {
@@ -36,7 +33,6 @@
         "startingBid": 35000,
         "currentHighestBid": 35000,
         "startTime": "172367778950599",
-        "endTime": "1723681389503999",
         "bids": []
       },
       {
@@ -46,7 +42,6 @@
         "startingBid": 40000,
         "currentHighestBid": 35000,
         "startTime": "1723677789505999",
-        "endTime": "1723681389503999",
         "bids": []
       },
       {
@@ -56,7 +51,6 @@
         "startingBid": 35000,
         "currentHighestBid": 35000,
         "startTime": "1723677789505999",
-        "endTime": "1723681389503999",
         "bids": []
       },
       {
@@ -66,7 +60,6 @@
         "startingBid": 6000,
         "currentHighestBid": 6000,
         "startTime": "1723677789505999",
-        "endTime": "1723681389503999",
         "bids": []
       },
       {
@@ -76,7 +69,6 @@
         "startingBid": 6000,
         "currentHighestBid": 6000,
         "startTime": "1723677789505999",
-        "endTime": "1723681389503999",
         "bids": []
       },
       {
@@ -86,7 +78,6 @@
         "startingBid": 7000,
         "currentHighestBid": 7000,
         "startTime": "1723677789505999",
-        "endTime": "1723681389503999",
         "bids": []
       }
 
