@@ -6,11 +6,9 @@ body {
   background-color: #cfc9c9;
   color: #333;
   overflow-x: hidden;
-  
 }
 
 .container {
-  
   position: relative;
   align-items: center;
   text-align: center;
@@ -22,7 +20,7 @@ body {
   height: auto;
   margin: 0;
   padding: 0px 20px;
-  top: 66.4%;
+  top: 56%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 10;
@@ -37,7 +35,7 @@ button {
   text-decoration: none;
   border: none;
   border-radius: 40px;
-  background-color: #007bff;
+  background-color: #19793f;
   color: white;
   transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
   cursor: pointer;
@@ -45,19 +43,19 @@ button {
 }
 
 button:hover {
-  background-color: #0c4888;
+  background-color: #1c3d29;
   transform: scale(1.05);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 button:active {
-  background-color: #0c4888;
+  background-color: #166436;
   transform: scale(1);
 }
 
 button:focus {
   outline: none;
-  box-shadow: 0 0 0 3px #0c4888;
+  box-shadow: 0 0 0 3px #166436;
 }
 
 .banner {
@@ -66,12 +64,13 @@ button:focus {
   margin-top: 0;
   position: relative;
   z-index: 1;
+
 }
-
-
-
-
-
+.intro {
+  
+  font-family: "Grey Qo", cursive;
+  font-size: 5em;
+}
 
 
 /* Responsive Styles */
@@ -79,7 +78,6 @@ button:focus {
   .title {
     font-size: 4.5em;
     padding-top: 150px;
-    
   }
   button {
     font-size: 2.5rem;
@@ -88,7 +86,7 @@ button:focus {
 
 @media (max-width: 900px) {
   .title {
-    font-size: 4.5em; 
+    font-size: 4.5em;
   }
   button {
     position: relative;
@@ -99,7 +97,7 @@ button:focus {
 
 @media (max-width: 600px) {
   .title {
-    font-size: 3em; 
+    font-size: 3em;
     padding-top: 150px;
   }
 
@@ -112,7 +110,7 @@ button:focus {
 
 @media (max-width: 300px) {
   .title {
-    font-size: 2em; 
+    font-size: 2em;
   }
 
   button {
@@ -120,4 +118,13 @@ button:focus {
     font-size: 1.5rem;
   }
 }
-
+.custom-para{
+  font-size: 2.5em; 
+  font-weight: bold;
+  color: #333;
+  text-align: center; 
+  padding: 10px; 
+  text-transform: uppercase;
+  font-family: 'Source Sans Pro', sans-serif; 
+  
+}

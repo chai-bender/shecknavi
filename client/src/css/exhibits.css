@@ -33,7 +33,6 @@
   background-color: #e9ecef;
 }
 
-
 .exhibitImg {
   max-width: 100%;
   height: auto;
@@ -50,10 +49,8 @@
   font-size: 4rem;
   text-align: center;
   margin: 20px 0;
-  border: 5px solid #007bff;
-  border-radius: 25px;
+
   padding: 10px 20px;
-  
 }
 
 .flex-container {
@@ -64,60 +61,43 @@
 }
 
 .flex-container > div {
-    padding: 15px 30px;
-    font-family: "Grey Qo", cursive;
-    font-size: 4.25rem;
-    font-weight: bold;
-    text-align: center;
-    text-decoration: none;
-    border: none;
-    border-radius: 40px;
-    background-color: #007bff;
-    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
-    cursor: pointer;
-  }
-  
-  .flex-container > div a {
-    text-decoration: none; 
-    color: white; 
-  }
-  
-  .flex-container > div a:hover {
-    color: white; 
-  }
-  
-  .flex-container > div:hover {
-    background-color: #0c4888;
-    transform: scale(1.05);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
-  
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 40px;
+  font-family: "Arial", sans-serif;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #7f9487;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin: 10px -300px;
+}
+
+.flex-container > div a {
+  text-decoration: none;
+  color: white;
+}
+
+.flex-container > div a:hover {
+  color: white;
+}
+
+.flex-container > div:hover {
+  background-color: #5f6c64;
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 .snippet {
   color: #000000;
   text-align: center;
   font-size: 40px;
   font-family: "Grey Qo", cursive;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* Responsive Styling */
 @media (max-width: 1200px) {
@@ -126,7 +106,7 @@
   }
 
   .flex-container > div {
-    width: 220px; 
+    width: 220px;
   }
 }
 
@@ -136,29 +116,29 @@
   }
 
   .flex-container > div {
-    width: 200px; 
+    width: 200px;
   }
 }
 
 @media (max-width: 600px) {
   .nav-tabs {
-    flex-direction: column; 
+    flex-direction: column;
   }
 
   .nav-link {
-    padding: 0.75rem 1.5rem; 
+    padding: 0.75rem 1.5rem;
   }
 
   .exhibitTitle {
-    font-size: 1.5rem; 
+    font-size: 1.5rem;
   }
 
   .flex-container {
-    flex-direction: column; 
-    align-items: center; 
+    flex-direction: column;
+    align-items: center;
   }
 
   .flex-container > div {
-    width: auto; 
+    width: auto;
   }
 }

@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useMutation } from '@apollo/client';
 import { ADD_PROFILE } from '../utils/mutations';
+import "../css/signup.css";
 
 import Auth from '../utils/auth';
 

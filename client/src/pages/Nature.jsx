@@ -6,6 +6,7 @@ export default function Nature() {
       <div>
      <NavTabs />
      <h1 className="natureTitle">Nature's Gambit</h1>
+     <img class="construction" src="./images/backdrop/remodel.png" alt="construction site" />
       </div>
     );
   }

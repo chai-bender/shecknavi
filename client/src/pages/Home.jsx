@@ -17,8 +17,9 @@ export default function Home() {
       <br></br>
       <br></br>
       <Link to="/Exhibits">
-        <button>Explore</button>
-      </Link>
+        <button>Welcome</button>
+      </Link><br></br><br></br>
+      <h2 class="intro">"Art For Your Soul"</h2>
     </div>
   );
 }
