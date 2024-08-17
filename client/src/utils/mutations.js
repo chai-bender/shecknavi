@@ -24,3 +24,12 @@ mutation Login($email: String!, $password: String!) {
   }
 }
 `;
+export const PLACE_BID = gql`
+mutation placeBid($artworkId: ID!, $bidAmount: Float!) {
+  placeBid(artworkId: $artworkId, bidAmount: $bidAmount) {
+    _id
+    bidAmount
+    bidTime
+  }
+}
+`;
