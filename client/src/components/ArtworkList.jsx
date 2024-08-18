@@ -14,19 +14,19 @@ const ArtworkList = ({ artwork }) => {
             <h4 className="card-header bg-primary text-light p-2 m-0">
               {art.title}
             </h4>
-            
+
             <img src={art.imageUrl}></img>
             <br></br>
             <div className="card-body bg-light p-2">
               <p>{art.description}</p>
             </div>
-
+            <br></br>
             <Link
-                className="btn btn-primary btn-block btn-squared"
-                to={`/art/${art._id}`}>
-                Bid Here
-              </Link>
-
+              className="btn btn-primary btn-block btn-squared"
+              to={`/art/${art._id}`}
+            >
+              Bid Here
+            </Link>
           </div>
         ))}
     </div>
