@@ -74,7 +74,7 @@
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: background-color 0.3s ease, transform 0.2s ease;
-  margin: 10px -300px;
+  margin: 10px -50px;
 }
 
 .flex-container > div a {
@@ -98,6 +98,12 @@
   font-size: 40px;
   font-family: "Grey Qo", cursive;
 }
+/* Style for the logout button */
+
+
+
+
+
 
 /* Responsive Styling */
 @media (max-width: 1200px) {
