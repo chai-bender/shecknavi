@@ -1,6 +1,7 @@
 const { Profile, Artwork, Bid } = require('../models');
 const { AuthenticationError } = require('@apollo/server'); // Updated import
 const { signToken } = require('../utils/auth');
+const dayjs = require('dayjs');
 
 const resolvers = {
   Query: {
@@ -32,7 +33,7 @@ const resolvers = {
       if (!artwork) throw new Error('Artwork not found');
     
       // Ensure auction status is open and bid amount is valid
-      if (Date.now() >= artwork.endTime) throw new Error('This auction is closed')
+      if (dayjs().toISOString >= artwork.endTime) throw new Error('This auction is closed')
       if (bidAmount <= artwork.currentHighestBid) throw new Error('Bid must be higher than current highest bid');
     
       // Create and save the new bid
