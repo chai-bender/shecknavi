@@ -1,5 +1,4 @@
 import { useParams, useNavigate } from 'react-router-dom';
-import { useParams } from "react-router-dom";
 import { useQuery, useMutation } from "@apollo/client";
 import { QUERY_SINGLE_ARTWORK, PLACE_BID } from "../utils/queries";
 import { useState, useEffect } from "react";
