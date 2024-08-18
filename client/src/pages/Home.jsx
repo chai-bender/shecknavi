@@ -14,7 +14,7 @@ export default function Home() {
 
         <h1 className="title">ScheckNaví</h1>
       </div>
-      <h2 class="intro">"Art For Your Soul"</h2>
+      <h2 className="intro">"Art For Your Soul"</h2>
       
       <Link to="/Exhibits">
         <button>Welcome</button>
