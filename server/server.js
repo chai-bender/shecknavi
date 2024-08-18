@@ -7,7 +7,7 @@ const mongoose = require('mongoose');
 const { typeDefs, resolvers } = require('./schemas');
 
 // MongoDB URI from MongoDB Atlas
-const uri = 'mongodb+srv://mikeayoungjr:<password>@cluster0.ejdly.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
+const uri = 'mongodb+srv://mikeayoungjr:8ZFymVlzuXguM5j5@cluster0.ejdly.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
 
 // Connect to MongoDB
 mongoose.connect(uri, {
