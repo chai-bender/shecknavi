@@ -17,8 +17,8 @@
   },
   "dependencies": {
     "apollo-server": "^3.13.0",
+    "dayjs": "^1.11.12",
     "graphql": "^16.9.0",
-    "dayjs": "^1.11.12"
-
+    "mongodb": "^6.8.0"
   }
 }
