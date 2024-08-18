@@ -1,3 +1,4 @@
+import { useParams, useNavigate } from 'react-router-dom';
 import { useParams } from "react-router-dom";
 import { useQuery, useMutation } from "@apollo/client";
 import { QUERY_SINGLE_ARTWORK, PLACE_BID } from "../utils/queries";
@@ -7,6 +8,7 @@ import "../css/artdetail.css";
 
 export default function ArtworkDetail() {
   const { artworkId } = useParams();
+  const navigate = useNavigate(); // Initialize the useNavigate hook
   const { loading, data, refetch } = useQuery(QUERY_SINGLE_ARTWORK, {
     variables: { artworkId },
   });
@@ -57,7 +59,9 @@ export default function ArtworkDetail() {
   };
 
   return (
+
     <div className="artwork-detail-container">
+      <button onClick={() => navigate(-1)}>Back</button> {/* Add Back Button */}
       <h1 className="artwork-title">{artwork.title}</h1>
       <img
         className="artwork-image"
