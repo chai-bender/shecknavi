@@ -1,6 +1,8 @@
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import Auth from '../utils/auth'; // Assuming you have an auth utility for checking auth status
+import "../css/logout.css";
+
 
 function NavTabs() {
   const currentPage = useLocation().pathname;
@@ -30,7 +32,7 @@ function NavTabs() {
       {isLoggedIn ? (
         <>
           <li className="nav-item">
-            <button
+            <button id="logoutBtn"
               onClick={handleLogout}
               className="nav-link"
             >

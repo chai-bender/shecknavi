@@ -120,4 +120,25 @@
       font-size: 1rem;
     }
   }
+
+  #backBtn {
+    font-size: 2em;
+    background-color: #323934;
+  }
+  
+  button:hover {
+    background-color: #202421;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  button:active {
+    background-color: #202421;
+    transform: scale(1);
+  }
+  
+  button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px #166436;
+  }
   

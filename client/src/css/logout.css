@@ -1,0 +1,21 @@
+#logoutBtn {
+  display: block;
+  font-size: 1em;
+  color: #ffffff;
+  text-decoration: none;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  transition: background-color 0.3s, color 0.3s;
+  background-color: rgb(0, 0, 0);
+}
+
+#logoutBtn:hover {
+  color: #0056b3;
+  background-color: #e9ecef;
+}
+
+#logoutBtn:active {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}

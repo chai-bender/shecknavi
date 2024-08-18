@@ -60,7 +60,7 @@ export default function ArtworkDetail() {
   return (
 
     <div className="artwork-detail-container">
-      <button onClick={() => navigate(-1)}>Back</button> {/* Add Back Button */}
+      <button id="backBtn" onClick={() => navigate(-1)}>Back</button> {/* Add Back Button */}
       <h1 className="artwork-title">{artwork.title}</h1>
       <img
         className="artwork-image"
