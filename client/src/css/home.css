@@ -20,7 +20,7 @@ body {
   height: auto;
   margin: 0;
   padding: 0px 20px;
-  top: 56%;
+  top: 56.5%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 10;
@@ -29,13 +29,13 @@ body {
 
 button {
   padding: 15px 30px;
-  font-size: 4.25rem;
+  font-size: 6rem;
   font-weight: bold;
   text-align: center;
   text-decoration: none;
   border: none;
   border-radius: 40px;
-  background-color: #19793f;
+  background-color: #7f9487;
   color: white;
   transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
   cursor: pointer;
@@ -43,7 +43,7 @@ button {
 }
 
 button:hover {
-  background-color: #1c3d29;
+  background-color: #5f6c64;
   transform: scale(1.05);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
@@ -69,7 +69,7 @@ button:focus {
 .intro {
   
   font-family: "Grey Qo", cursive;
-  font-size: 5em;
+  font-size: 4em;
 }
 
 
@@ -90,41 +90,47 @@ button:focus {
   }
   button {
     position: relative;
-    font-size: 1.5rem;
+    font-size: 2rem;
+    top: 100px;
+  }
+  .intro {
+    font-size: 3em;
+    position: relative;
     top: 100px;
   }
 }
 
 @media (max-width: 600px) {
   .title {
-    font-size: 3em;
+    font-size: 4em;
     padding-top: 150px;
   }
 
   button {
     position: relative;
-    font-size: 1.5rem;
+    font-size: 2rem;
+    top: 100px;
+  }
+  .intro {
+    font-size: 2em;
+    position: relative;
     top: 100px;
   }
 }
 
 @media (max-width: 300px) {
   .title {
-    font-size: 2em;
+    font-size: 3em;
   }
 
   button {
     padding: 6px 12px;
     font-size: 1.5rem;
   }
+  .intro {
+    font-size: 1em;
+    position: relative;
+    top: 100px;
+  }
 }
-.custom-para{
-  font-size: 2.5em; 
-  font-weight: bold;
-  color: #333;
-  text-align: center; 
-  padding: 10px; 
-  text-transform: uppercase;
-  font-family: 'Source Sans Pro', sans-serif; 
-  
-}
+

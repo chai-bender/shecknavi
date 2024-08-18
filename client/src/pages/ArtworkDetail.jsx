@@ -1,8 +1,10 @@
 import { useParams, useNavigate } from 'react-router-dom';
-import { useQuery, useMutation } from '@apollo/client';
-import { QUERY_SINGLE_ARTWORK, PLACE_BID } from '../utils/queries';
-import { useState, useEffect } from 'react';
-import dayjs from 'dayjs';
+import { useParams } from "react-router-dom";
+import { useQuery, useMutation } from "@apollo/client";
+import { QUERY_SINGLE_ARTWORK, PLACE_BID } from "../utils/queries";
+import { useState, useEffect } from "react";
+import dayjs from "dayjs";
+import "../css/artdetail.css";
 
 export default function ArtworkDetail() {
   const { artworkId } = useParams();
@@ -17,7 +19,7 @@ export default function ArtworkDetail() {
   useEffect(() => {
     if (data?.artwork?.endTime) {
       const endTime = dayjs(data.artwork.endTime);
-      console.log('Auction End Time:', endTime.format()); // Log the end time
+      console.log("Auction End Time:", endTime.format()); // Log the end time
 
       const intervalId = setInterval(() => {
         const now = dayjs();
@@ -30,9 +32,9 @@ export default function ArtworkDetail() {
           const hours = Math.floor(diff / (1000 * 60 * 60));
           const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
           const seconds = Math.floor((diff % (1000 * 60)) / 1000);
-          
+
           setTimeRemaining(`${hours}h ${minutes}m ${seconds}s`);
-          console.log('Time Remaining:', `${hours}h ${minutes}m ${seconds}s`); // Log the time remaining
+          console.log("Time Remaining:", `${hours}h ${minutes}m ${seconds}s`); // Log the time remaining
         }
       }, 1000);
 
@@ -49,7 +51,7 @@ export default function ArtworkDetail() {
       await placeBid({
         variables: { artworkId, bidAmount: parseFloat(bidAmount) },
       });
-      alert('Bid placed successfully!');
+      alert("Bid placed successfully!");
       refetch(); // Refetch the artwork data to show updated highest bid
     } catch (err) {
       alert(err.message);
@@ -57,21 +59,33 @@ export default function ArtworkDetail() {
   };
 
   return (
-    <div>
-      <button onClick={() => navigate(-1)}>Back</button> {/* Add Back Button */}
-      <h1>{artwork.title}</h1>
-      <img src={artwork.imageUrl} alt={artwork.title} />
-      <p>{artwork.description}</p>
-      <p>Current Highest Bid: ${artwork.currentHighestBid}</p>
-      <p>Auction Ends In: {timeRemaining}</p>
 
-      <input
-        type="number"
-        value={bidAmount}
-        onChange={(e) => setBidAmount(e.target.value)}
-        placeholder="Enter your bid"
+    <div className="artwork-detail-container">
+      <button onClick={() => navigate(-1)}>Back</button> {/* Add Back Button */}
+      <h1 className="artwork-title">{artwork.title}</h1>
+      <img
+        className="artwork-image"
+        src={artwork.imageUrl}
+        alt={artwork.title}
       />
-      <button onClick={handleBid}>Place Bid</button>
+      <p className="artwork-description">{artwork.description}</p>
+      <p className="current-bid">
+        Current Highest Bid: ${artwork.currentHighestBid}
+      </p>
+      <p className="auction-end-time">Auction Ends In: {timeRemaining}</p>
+
+      <div className="bid-section">
+        <input
+          className="bid-input"
+          type="number"
+          value={bidAmount}
+          onChange={(e) => setBidAmount(e.target.value)}
+          placeholder="Enter your bid"
+        />
+        <button className="bid-button" onClick={handleBid}>
+          Place Bid
+        </button>
+      </div>
     </div>
   );
 }
